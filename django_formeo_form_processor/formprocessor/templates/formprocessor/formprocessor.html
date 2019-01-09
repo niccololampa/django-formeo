@@ -2,11 +2,10 @@
 {% load static %}
 {% block content %}
 
-
 <section id="main_content" class="inner">
-    <form id="form_saver" method="POST">
+    <form id="form_saver" method="POST" action="/formprocessor/">
         {% csrf_token %}
-        <label>Form Name: </label>
+        <label for="form_name">Form Name: </label>
         <input id="form_name" name=form_name>
         <input id="form_data_input" type="hidden" name=form_data>
     </form>
