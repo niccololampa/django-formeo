@@ -1,4 +1,5 @@
-# Create your views here.
+# from django.shortcuts import render
+# from django.http import HttpResponse
 
 
 # FORM RENDER VIEWS 
@@ -19,6 +20,7 @@ def form_render_page(request):
     
     
     # this code is for direct loading of whole original json file. 
+    # print(type(SavedFormData.objects.get(id=req_id).form_data))
     # saved_template = json.dumps(SavedFormData.objects.get(id=req_id).form_data)
 
     #this is the code to  be used if  you want to combine fields for checkbox, select, other

@@ -8,6 +8,7 @@ from django.shortcuts import render
 from django.template import loader
 import json 
 
+
 class FormDragPage(TemplateView):
     template_name = 'formprocessor/formprocessor.html'
 

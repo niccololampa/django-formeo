@@ -3,6 +3,7 @@
 {% block content %}
 
 <section id="main_content" class="inner">
+
     <form id="form_saver" method="POST" action="/formprocessor/">
         {% csrf_token %}
         <label for="form_name">Form Name: </label>
@@ -11,6 +12,20 @@
     </form>
 
     <form class="build-form clearfix"></form>
+    <div id="pop-window">
+        <div id="popup-options">
+            <form id="popup-form" action="">
+                <p id="pop-title">Insert Options Here</p>
+                <hr>
+                <p id="pop-instruct">Enter each option choice on a separate line. </p>
+                <textarea name="options" id="pop-textarea" cols="30" rows="10"></textarea>
+
+                <a id="bulk-submit" onclick="uploadOptions()">Bulk Upload</a>
+                <a id="bulk-cancel" onclick="popHide()">Cancel</a>
+
+            </form>
+        </div>
+    </div>
     <div id="render-area" class="render-form"></div>
 </section>
 <div class="container render-btn-wrap">
@@ -32,4 +47,5 @@
 </footer>
 <script type="text/javascript" src="{% static '/formprocessor/js/formeo.min.js' %}"></script>
 <script type="text/javascript" src="{% static '/formprocessor/js/demo.js' %}"></script>
+<script type="text/javascript" src="{% static '/formprocessor/js/bulkoptions.js' %}"></script>
 {% endblock %}
