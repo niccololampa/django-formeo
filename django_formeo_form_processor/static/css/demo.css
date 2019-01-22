@@ -171,7 +171,7 @@ h3{
   font-size: 20px;
 }
 
-.home-table, th, td {
+.home-table th,td {
   border: 3px solid black;
   border-collapse: collapse;
 }
@@ -186,11 +186,9 @@ h3{
   
 }
 
-/* CSS FOR BUTTON */
-/* .hidden{
-  visibility: hidden;
-} */
 
+
+/* ---------------------------------------------- */
 /* BULK OPTIONS POP UP */
 
 #pop-window {
@@ -207,7 +205,7 @@ h3{
   }
 
 
-div#popup-options {
+#popup-options {
   position:absolute;
   left:50%;
   top:17%;
@@ -223,10 +221,11 @@ div#popup-options {
   border:2px solid gray;
   border-radius:10px;
   font-family:raleway;
-  background-color:#fff
+  background-color:#fff;
+  text-align:center;
   }
 
-#pop-title {
+.pop-title {
   background-color:#edfffa;
   padding:20px 35px;
   margin:-10px -50px;
@@ -247,45 +246,106 @@ hr {
 }
 
 
-#pop-textarea {
-  
-  width:100%;
+#pop-textarea {  
+  width:96%;
   height:95px;
-  padding:10px;
+  /* padding:10px; */
   resize:none;
-  margin-top:30px;
+  margin: 30px 0px 10px 0px;
   border:1px solid #ccc;
   /* padding-left:40px; */
   font-size:16px;
   font-family:raleway;
-  margin-bottom:30px
 }
 
-#bulk-submit {
-  text-decoration:none;
+#load-options{
+  cursor: pointer;
+}
+
+.bulk-button{text-decoration:none;
   width:100%;
   text-align:center;
-  display:block;
-  background-color:#00b7ff;
-  color:#fff;
-  border:1px solid #00b7ff;
-  padding:10px 0;
+  display:block; 
+  color:#fff;  
+  /* padding:10px 0; */
   font-size:20px;
   cursor:pointer;
-  border-radius:5px
+  border-radius:5px;}
+
+#bulk-update { 
+  background-color:#00b7ff;  
+  border:1px solid #00b7ff;  
+  margin: 5px 0px;
 }
 
-#bulk-cancel {
-  text-decoration:none;
-  width:100%;
-  text-align:center;
-  display:block;
+#bulk-save{ 
+  background-color:#189e45;  
+  border:1px solid #189e45;  
+  margin: 5px 0px;
+}
+
+
+#bulk-cancel { 
   background-color:#ff3300;
-  color:#fff;
   margin-top: 5px;
   border:1px solid #ff3300;
-  padding:10px 0;
-  font-size:20px;
-  cursor:pointer;
-  border-radius:5px
+  
 }
+
+#options-name{
+  width: 96%
+}
+/* ---------------------------------------- */
+
+#pop-load-options {
+  position:absolute;
+  left:50%;
+  top:17%;
+  margin-left:-202px;
+  font-family:'Raleway',sans-serif;
+  display: none;
+  }
+
+.popup-load-area {
+  max-width:400px;
+  min-width:350px;
+  min-height: 400px;
+  padding:10px 50px;
+  border:2px solid gray;
+  border-radius:10px;
+  font-family:raleway;
+  background-color:#fff;
+  text-align:center;
+  font-size: 20px;
+  }
+
+  #table-options td {
+    border: none;
+    border-collapse: collapse;
+    width: 200px;
+  }
+  
+  #table-options{
+    margin-left:auto; 
+    margin-right:auto;
+  }  
+
+  #options-cancel { 
+    background-color:#ff3300;
+    margin-top: 5px;
+    border:1px solid #ff3300;
+    
+  }
+
+  /* CSS FOR BUTTON */
+  /* NOTES OF NICCOLO LAMPA */
+
+/* 
+.show{
+  visibility: visible;
+}
+.hide{
+  display: none
+} */
+
+ 
